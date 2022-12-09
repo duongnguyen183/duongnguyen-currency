@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+      <a href="" class="nav-brand">Currencies</a>
+      <ul>
+        <li class="nav-item"><a href="about.html">About us</a></li>
+        <li><a href="" class="nav-item btn btn-default">Register</a></li>
+      </ul>
+    </nav>
+
+    <div class="wrapper">
+        <div class="container" id="main">
+            <p>Select the base currency and the target currency and we'll show you the conversion rate.</p>
+            <div class="grid">
+                <div>
+                    <label for="base-currency">Base currency:</label>
+                    <select id="base-currency">
+                        <option value="EUR" class="currency-flag-eur">Euro (€)</option>
+                        <option value="GBP" class="currency-flag-gbp">Bảng Anh (£)</option>
+                        <option value="USD" class="currency-flag-usd">Dollar Mỹ ($)</option>
+                        <option value="INR" class="currency-flag-inr">Rupee Ấn Độ (₹)</option>
+                        <option value="CAD" class="currency-flag-cad">Dollar Canada ($)</option>
+                        <option value="AUD" class="currency-flag-aud">Dollar Úc ($)</option>
+                        <option value="CHF" class="currency-flag-chf">franc Thụy Sĩ (Fr)</option>
+                        <option value="MXN" class="currency-flag-mxn">peso Mexico ($)</option>
+                        <option value="FJD" class="currency-flag-fjd">dollar Fiji ($)</option>
+                        <option value="SCR" class="currency-flag-scr">rupee Seychelles (₨)</option>
+                        <option value="BBD" class="currency-flag-bbd">Barbadian Dollar ($)</option>
+                        <option value="GTQ" class="currency-flag-gtq">quetzal Guatemala (Q)</option>
+                        <option value="CLP" class="currency-flag-clp">peso Chile ($)</option>
+                        <option value="HNL" class="currency-flag-hnl">lempira Honduras (L)</option>
+                        <option value="UGX" class="currency-flag-ugx">shilling Uganda (Sh)</option>
+                        <option value="ZAR" class="currency-flag-zar">rand Nam Phi (R)</option>
+                        <option value="TND" class="currency-flag-tnd">dinar Tunisia (د.ت)</option>
+                        <option value="BSD" class="currency-flag-bsd">Bahamian Dollar ($)</option>
+                        <option value="SLL" class="currency-flag-sll">leone Sierra Leone (Le)</option>
+                        <option value="GMD" class="currency-flag-gmd">dalasi Gambia (D)</option>
+                        <option value="TWD" class="currency-flag-twd">Tân Đài Tệ ($)</option>
+                        <option value="RSD" class="currency-flag-rsd">dinar Serbia (дин. or din.)</option>
+                        <option value="DOP" class="currency-flag-dop">peso Dominicana ($)</option>
+                        <option value="KMF" class="currency-flag-kmf">franc Comoros (Fr)</option>
+                        <option value="MYR" class="currency-flag-myr">ringgit Malaysia (RM)</option>
+                        <option value="FKP" class="currency-flag-fkp">Bảng Quần đảo Falkland (£)</option>
+                        <option value="XOF" class="currency-flag-xof">CFA Franc Tây Phi (Fr)</option>
+                        <option value="GEL" class="currency-flag-gel">lari Gruzia (	ლ)</option>
+                        <option value="UYU" class="currency-flag-uyu">peso Uruguay ($)</option>
+                        <option value="MAD" class="currency-flag-mad">dirham Maroc (د.م.)</option>
+                        <option value="CVE" class="currency-flag-cve">escudo Cape Verde (Esc or $)</option>
+                        <option value="TOP" class="currency-flag-top">paʻanga Tonga (T$)</option>
+                        <option value="AZN" class="currency-flag-azn">Manat Azerbaijan</option>
+                        <option value="OMR" class="currency-flag-omr">rial Oman (ر.ع.)</option>
+                        <option value="PGK" class="currency-flag-pgk">kina Papua New Guinea (K)</option>
+                        <option value="KES" class="currency-flag-kes">shilling Kenya (Sh)</option>
+                        <option value="SEK" class="currency-flag-sek">krona Thụy Điển (kr)</option>
+                        <option value="BTN" class="currency-flag-btn">Ngultrum Bhutan (Nu.)</option>
+                        <option value="UAH" class="currency-flag-uah">hryvnia Ukraina (₴)</option>
+                        <option value="GNF" class="currency-flag-gnf">franc Guinea (Fr)</option>
+                        <option value="MZN" class="currency-flag-mzn">metical Mozambique (MT)</option>
+                        <option value="SVC" class="currency-flag-svc">colón El Salvador (₡)</option>
+                        <option value="ARS" class="currency-flag-ars">Peso Argentina ($)</option>
+                        <option value="QAR" class="currency-flag-qar">riyal Qatar (ر.ق)</option>
+                        <option value="CNY" class="currency-flag-cny">Nhân dân tệ (¥ or 元)</option>
+                        <option value="THB" class="currency-flag-thb">baht Thái (฿)</option>
+                        <option value="UZS" class="currency-flag-uzs">som Uzbekistan (лв)</option>
+                        <option value="XPF" class="currency-flag-xpf">franc Thái Bình Dương (Fr)</option>
+                        <option value="BDT" class="currency-flag-bdt">Bangladeshi Taka (৳)</option>
+                        <option value="BMD" class="currency-flag-bmd">Bermudian Dollar ($)</option>
+                        <option value="KWD" class="currency-flag-kwd">dinar Kuwait (د.ك)</option>
+                        <option value="PHP" class="currency-flag-php">peso Philippines (₱)</option>
+                        <option value="RUB" class="currency-flag-rub">Ruble Nga (р.)</option>
+                        <option value="PYG" class="currency-flag-pyg">guaraní Paraguay (₲)</option>
+                        <option value="ISK" class="currency-flag-isk">króna Iceland (kr)</option>
+                        <option value="JMD" class="currency-flag-jmd">dollar Jamaica ($)</option>
+                        <option value="COP" class="currency-flag-cop">peso Colombia ($)</option>
+                        <option value="MKD" class="currency-flag-mkd">denar Macedonia (ден)</option>
+                        <option value="DZD" class="currency-flag-dzd">Dinar Algérie (د.ج)</option>
+                        <option value="PAB" class="currency-flag-pab">balboa Panama (B/.)</option>
+                        <option value="GGP" class="currency-flag-ggp">Bảng Guernsey (£)</option>
+                        <option value="SGD" class="currency-flag-sgd">dollar Singapore ($)</option>
+                        <option value="ETB" class="currency-flag-etb">birr Ethiopia (Br)</option>
+                        <option value="JEP" class="currency-flag-jep">Bảng Jersey (£)</option>
+                        <option value="KGS" class="currency-flag-kgs">som Kyrgyzstan (лв)</option>
+                        <option value="VUV" class="currency-flag-vuv">vatu Vanuatu (Vt)</option>
+                        <option value="LAK" class="currency-flag-lak">kip Lào (₭)</option>
+                        <option value="BND" class="currency-flag-bnd">dollar Brunei ($)</option>
+                        <option value="XAF" class="currency-flag-xaf">CFA franc Trung Phi (Fr)</option>
+                        <option value="LRD" class="currency-flag-lrd">dollar Liberia ($)</option>
+                        <option value="HRK" class="currency-flag-hrk">kuna Croatia (kn)</option>
+                        <option value="ALL" class="currency-flag-all">Lek Albania (L)</option>
+                        <option value="DJF" class="currency-flag-djf">franc Djibouti (Fr)</option>
+                        <option value="ZMW" class="currency-flag-zmw">kwacha Zambia (ZK)</option>
+                        <option value="TZS" class="currency-flag-tzs">shilling Tanzania (Sh)</option>
+                        <option value="VND" class="currency-flag-vnd">đồng Việt Nam (₫)</option>
+                        <option value="ILS" class="currency-flag-ils">new shekel Israel (₪)</option>
+                        <option value="GHS" class="currency-flag-ghs">cedi Ghana (₵)</option>
+                        <option value="GYD" class="currency-flag-gyd">dollar Guyana ($)</option>
+                        <option value="BOB" class="currency-flag-bob">Boliviano Bolivia (Bs.)</option>
+                        <option value="KHR" class="currency-flag-khr">riel Campuchia (៛)</option>
+                        <option value="MDL" class="currency-flag-mdl">leu Moldova (L)</option>
+                        <option value="IDR" class="currency-flag-idr">rupiah Indonesia (Rp)</option>
+                        <option value="KYD" class="currency-flag-kyd">dollar Quần đảo Cayman ($)</option>
+                        <option value="AMD" class="currency-flag-amd">Dram Armenia (֏)</option>
+                        <option value="BWP" class="currency-flag-bwp">Pula Botswana (P)</option>
+                        <option value="SHP" class="currency-flag-shp">Bảng Saint Helena (£)</option>
+                        <option value="TRY" class="currency-flag-try">lira Thổ Nhĩ Kỳ</option>
+                        <option value="LBP" class="currency-flag-lbp">Bảng Lebanon (ل.ل)</option>
+                        <option value="TJS" class="currency-flag-tjs">somoni Tajikistan (ЅМ)</option>
+                        <option value="JOD" class="currency-flag-jod">dinar Jordan (د.ا)</option>
+                        <option value="AED" class="currency-flag-aed">dirham Các tiểu vương quốc Ả Rập thống nhất (د.إ)</option>
+                        <option value="HKD" class="currency-flag-hkd">dollar Hồng Kông ($)</option>
+                        <option value="RWF" class="currency-flag-rwf">franc Rwanda (Fr)</option>
+                        <option value="LSL" class="currency-flag-lsl">loti Lesotho (L)</option>
+                        <option value="DKK" class="currency-flag-dkk">krone Đan Mạch (kr)</option>
+                        <option value="BGN" class="currency-flag-bgn">lev Bulgaria (лв)</option>
+                        <option value="MMK" class="currency-flag-mmk">kyat Myanmar (Ks)</option>
+                        <option value="MUR" class="currency-flag-mur">rupee Mauritius (₨)</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="target-currency">Target currency:</label>
+                    <select id="target-currency">
+                        <option value="EUR" class="currency-flag-eur">Euro (€)</option>
+                        <option value="GBP" class="currency-flag-gbp">Bảng Anh (£)</option>
+                        <option value="USD" class="currency-flag-usd">Dollar Mỹ ($)</option>
+                        <option value="INR" class="currency-flag-inr">Rupee Ấn Độ (₹)</option>
+                        <option value="CAD" class="currency-flag-cad">Dollar Canada ($)</option>
+                        <option value="AUD" class="currency-flag-aud">Dollar Úc ($)</option>
+                        <option value="CHF" class="currency-flag-chf">franc Thụy Sĩ (Fr)</option>
+                        <option value="MXN" class="currency-flag-mxn">peso Mexico ($)</option>
+                        <option value="FJD" class="currency-flag-fjd">dollar Fiji ($)</option>
+                        <option value="SCR" class="currency-flag-scr">rupee Seychelles (₨)</option>
+                        <option value="BBD" class="currency-flag-bbd">Barbadian Dollar ($)</option>
+                        <option value="GTQ" class="currency-flag-gtq">quetzal Guatemala (Q)</option>
+                        <option value="CLP" class="currency-flag-clp">peso Chile ($)</option>
+                        <option value="HNL" class="currency-flag-hnl">lempira Honduras (L)</option>
+                        <option value="UGX" class="currency-flag-ugx">shilling Uganda (Sh)</option>
+                        <option value="ZAR" class="currency-flag-zar">rand Nam Phi (R)</option>
+                        <option value="TND" class="currency-flag-tnd">dinar Tunisia (د.ت)</option>
+                        <option value="BSD" class="currency-flag-bsd">Bahamian Dollar ($)</option>
+                        <option value="SLL" class="currency-flag-sll">leone Sierra Leone (Le)</option>
+                        <option value="GMD" class="currency-flag-gmd">dalasi Gambia (D)</option>
+                        <option value="TWD" class="currency-flag-twd">Tân Đài Tệ ($)</option>
+                        <option value="RSD" class="currency-flag-rsd">dinar Serbia (дин. or din.)</option>
+                        <option value="DOP" class="currency-flag-dop">peso Dominicana ($)</option>
+                        <option value="KMF" class="currency-flag-kmf">franc Comoros (Fr)</option>
+                        <option value="MYR" class="currency-flag-myr">ringgit Malaysia (RM)</option>
+                        <option value="FKP" class="currency-flag-fkp">Bảng Quần đảo Falkland (£)</option>
+                        <option value="XOF" class="currency-flag-xof">CFA Franc Tây Phi (Fr)</option>
+                        <option value="GEL" class="currency-flag-gel">lari Gruzia (	ლ)</option>
+                        <option value="UYU" class="currency-flag-uyu">peso Uruguay ($)</option>
+                        <option value="MAD" class="currency-flag-mad">dirham Maroc (د.م.)</option>
+                        <option value="CVE" class="currency-flag-cve">escudo Cape Verde (Esc or $)</option>
+                        <option value="TOP" class="currency-flag-top">paʻanga Tonga (T$)</option>
+                        <option value="AZN" class="currency-flag-azn">Manat Azerbaijan</option>
+                        <option value="OMR" class="currency-flag-omr">rial Oman (ر.ع.)</option>
+                        <option value="PGK" class="currency-flag-pgk">kina Papua New Guinea (K)</option>
+                        <option value="KES" class="currency-flag-kes">shilling Kenya (Sh)</option>
+                        <option value="SEK" class="currency-flag-sek">krona Thụy Điển (kr)</option>
+                        <option value="BTN" class="currency-flag-btn">Ngultrum Bhutan (Nu.)</option>
+                        <option value="UAH" class="currency-flag-uah">hryvnia Ukraina (₴)</option>
+                        <option value="GNF" class="currency-flag-gnf">franc Guinea (Fr)</option>
+                        <option value="MZN" class="currency-flag-mzn">metical Mozambique (MT)</option>
+                        <option value="SVC" class="currency-flag-svc">colón El Salvador (₡)</option>
+                        <option value="ARS" class="currency-flag-ars">Peso Argentina ($)</option>
+                        <option value="QAR" class="currency-flag-qar">riyal Qatar (ر.ق)</option>
+                        <option value="CNY" class="currency-flag-cny">Nhân dân tệ (¥ or 元)</option>
+                        <option value="THB" class="currency-flag-thb">baht Thái (฿)</option>
+                        <option value="UZS" class="currency-flag-uzs">som Uzbekistan (лв)</option>
+                        <option value="XPF" class="currency-flag-xpf">franc Thái Bình Dương (Fr)</option>
+                        <option value="BDT" class="currency-flag-bdt">Bangladeshi Taka (৳)</option>
+                        <option value="BMD" class="currency-flag-bmd">Bermudian Dollar ($)</option>
+                        <option value="KWD" class="currency-flag-kwd">dinar Kuwait (د.ك)</option>
+                        <option value="PHP" class="currency-flag-php">peso Philippines (₱)</option>
+                        <option value="RUB" class="currency-flag-rub">Ruble Nga (р.)</option>
+                        <option value="PYG" class="currency-flag-pyg">guaraní Paraguay (₲)</option>
+                        <option value="ISK" class="currency-flag-isk">króna Iceland (kr)</option>
+                        <option value="JMD" class="currency-flag-jmd">dollar Jamaica ($)</option>
+                        <option value="COP" class="currency-flag-cop">peso Colombia ($)</option>
+                        <option value="MKD" class="currency-flag-mkd">denar Macedonia (ден)</option>
+                        <option value="DZD" class="currency-flag-dzd">Dinar Algérie (د.ج)</option>
+                        <option value="PAB" class="currency-flag-pab">balboa Panama (B/.)</option>
+                        <option value="GGP" class="currency-flag-ggp">Bảng Guernsey (£)</option>
+                        <option value="SGD" class="currency-flag-sgd">dollar Singapore ($)</option>
+                        <option value="ETB" class="currency-flag-etb">birr Ethiopia (Br)</option>
+                        <option value="JEP" class="currency-flag-jep">Bảng Jersey (£)</option>
+                        <option value="KGS" class="currency-flag-kgs">som Kyrgyzstan (лв)</option>
+                        <option value="VUV" class="currency-flag-vuv">vatu Vanuatu (Vt)</option>
+                        <option value="LAK" class="currency-flag-lak">kip Lào (₭)</option>
+                        <option value="BND" class="currency-flag-bnd">dollar Brunei ($)</option>
+                        <option value="XAF" class="currency-flag-xaf">CFA franc Trung Phi (Fr)</option>
+                        <option value="LRD" class="currency-flag-lrd">dollar Liberia ($)</option>
+                        <option value="HRK" class="currency-flag-hrk">kuna Croatia (kn)</option>
+                        <option value="ALL" class="currency-flag-all">Lek Albania (L)</option>
+                        <option value="DJF" class="currency-flag-djf">franc Djibouti (Fr)</option>
+                        <option value="ZMW" class="currency-flag-zmw">kwacha Zambia (ZK)</option>
+                        <option value="TZS" class="currency-flag-tzs">shilling Tanzania (Sh)</option>
+                        <option value="VND" class="currency-flag-vnd">đồng Việt Nam (₫)</option>
+                        <option value="ILS" class="currency-flag-ils">new shekel Israel (₪)</option>
+                        <option value="GHS" class="currency-flag-ghs">cedi Ghana (₵)</option>
+                        <option value="GYD" class="currency-flag-gyd">dollar Guyana ($)</option>
+                        <option value="BOB" class="currency-flag-bob">Boliviano Bolivia (Bs.)</option>
+                        <option value="KHR" class="currency-flag-khr">riel Campuchia (៛)</option>
+                        <option value="MDL" class="currency-flag-mdl">leu Moldova (L)</option>
+                        <option value="IDR" class="currency-flag-idr">rupiah Indonesia (Rp)</option>
+                        <option value="KYD" class="currency-flag-kyd">dollar Quần đảo Cayman ($)</option>
+                        <option value="AMD" class="currency-flag-amd">Dram Armenia (֏)</option>
+                        <option value="BWP" class="currency-flag-bwp">Pula Botswana (P)</option>
+                        <option value="SHP" class="currency-flag-shp">Bảng Saint Helena (£)</option>
+                        <option value="TRY" class="currency-flag-try">lira Thổ Nhĩ Kỳ</option>
+                        <option value="LBP" class="currency-flag-lbp">Bảng Lebanon (ل.ل)</option>
+                        <option value="TJS" class="currency-flag-tjs">somoni Tajikistan (ЅМ)</option>
+                        <option value="JOD" class="currency-flag-jod">dinar Jordan (د.ا)</option>
+                        <option value="AED" class="currency-flag-aed">dirham Các tiểu vương quốc Ả Rập thống nhất (د.إ)</option>
+                        <option value="HKD" class="currency-flag-hkd">dollar Hồng Kông ($)</option>
+                        <option value="RWF" class="currency-flag-rwf">franc Rwanda (Fr)</option>
+                        <option value="LSL" class="currency-flag-lsl">loti Lesotho (L)</option>
+                        <option value="DKK" class="currency-flag-dkk">krone Đan Mạch (kr)</option>
+                        <option value="BGN" class="currency-flag-bgn">lev Bulgaria (лв)</option>
+                        <option value="MMK" class="currency-flag-mmk">kyat Myanmar (Ks)</option>
+                        <option value="MUR" class="currency-flag-mur">rupee Mauritius (₨)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="result-grid">
+                <p> 1 </p>
+                <p> = </p>
+                <p id="conversion-result">1</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="footer-wrapper">
+        <a href="about.html" target="_blank">About us</a>
+        <a href="contact.html" target="_blank">Contact us</a>
+    </footer>
+</body>
+</html>
